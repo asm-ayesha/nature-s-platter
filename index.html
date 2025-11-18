@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
 
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/input.css">
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,13 +26,14 @@
         @theme {
             --color-clifford: #da373d;
             --my-font: "Sora", sans-serif;
+            --font-color:#179800;
       }
     </style>
 
 </head>
 
 <body class="font-(family-name:--my-font)">
-    <header>
+    <header class="bg-[linear-gradient(180deg,rgba(255,255,255,1),rgba(239,235,227,1)_100%)]">
         <!-- navber -->
         <nav class="container mx-auto">
             <div class="navbar ">
@@ -39,19 +44,19 @@
                 <!-- menu -->
                 <div class="lg:navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Product</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a class="hover:text-[#179800] bg-white">Product</a></li>
+                        <li><a class="hover:text-[#179800] bg-white" href="#">Service</a></li>
+                        <li><a class="hover:text-[#179800] bg-white">Contact Us</a></li>
                     </ul>
                 </div>
-               
+
 
                 <!-- btn + searchbar -->
                 <div class=" navbar-end hidden lg:flex space-x-3">
                     <!-- search icon -->
                     <img src="./images/Vector.png" alt="">
                     <!-- shopping cart -->
-                    <img  src="./images/Group.png" alt="">
+                    <img src="./images/Group.png" alt="">
                     <!-- btn -->
                     <button class="btn border-2 border-[#179800] bg-white">Login</button>
                     <button class="btn bg-[#179800] text-white">Register</button>
@@ -59,9 +64,9 @@
 
 
 
-                 
+
                 <!-- dropdown -->
-                <div class="dropdown ">
+                <div class="dropdown ml-auto lg:hidden ">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
@@ -69,20 +74,52 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul tabindex="-1"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52  shadow  ">
+                    <ul tabindex="1" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 p-2  shadow right-0  
+                ">
                         <li><a>Product</a></li>
                         <li><a href="#">Service</a></li>
                         <li><a>Contact Us</a></li>
-                    
+
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- hero section -->
+        <section class="place-self-center  mt-8 lg:px-24 px-12">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-center text-gray-900">
+
+                    <span class="word" style="animation-delay: 0s">Freshness</span>
+                    <span class="word text-green-600" style="animation-delay: 0.3s">You</span>
+                    <span class="word text-green-600" style="animation-delay: 0.6s">Can</span> <br>
+                    <span class="word text-green-600" style="animation-delay: 0.9s">Count</span>
+                    <span class="word" style="animation-delay: 1.2s">On,</span>
+                    <span class="word" style="animation-delay: 1.5s">Prices</span>
+                    <span class="word" style="animation-delay: 1.8s">You'll</span>
+                    <span class="word" style="animation-delay: 2.1s">Love!</span>
+
+                </h1>
+
+                <!-- <h2 class="font-black text-6xl">Freshness <span class="text-(--font-color)">You Can <br>
+                        Count </span> On, Prices You’ll Love!</h2> -->
+                <p class="text-xl text-gray-500 my-5 w-2/3 mx-auto">Shop your daily essentials at unbeatable prices.
+                    From fresh produce to pantry staples, we’ve got you
+                    covered every day!</p>
+            </div>
+            <!-- hero image -->
+            <div class="mt-12">
+                <img class="w-[600px] mx-auto" src="./images/hero-vegetables.png" alt="">
+            </div>
+
+        </section>
     </header>
 
     <main>
-
+        <!-- service section -->
+        <section class="my-24">
+            <h1 class="text-green-400">Service</h1>
+        </section>
     </main>
 
 </body>
